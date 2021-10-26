@@ -44,4 +44,4 @@ if [ -n "$ALPINEPYTHON" ] ; then
 fi
 
 #exec "$@"
-envconsul -consul-addr=consul-ui.default.svc.cluster.local --prefix=myapp  "$@"
+envconsul -consul-addr=consul-ui.default.svc.cluster.local --prefix=myapp  --prefix="${GIT_TAG:-v1}" "$@"
