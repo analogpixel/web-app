@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return "hello World:" + str(os.environ.get('app_config_1'))
-    #return app.send_static_file('index.html')
+    #return "hello World:" + str(os.environ.get('app_config_1'))
+    return app.send_static_file('index.html')
 
 @app.route('/topic')
 def get_topic():
