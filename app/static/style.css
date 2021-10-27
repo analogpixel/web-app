@@ -1,0 +1,24 @@
+.container {
+  display: grid; 
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ."
+    ". image ."
+    ". text ."
+    ". . ."; 
+    width: 98vw;
+  height: 98vh;
+}
+.image { grid-area: image; }
+.text { grid-area: text; }
+
+.content {
+  font-size: 2em;
+  color: white
+}
+
+img { max-width: 400px;}
+body { background: #3F3F3F }
