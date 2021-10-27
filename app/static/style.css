@@ -16,8 +16,9 @@
 .text { grid-area: text; }
 
 .content {
-  font-size: 2em;
-  color: white
+  font-size: 1em;
+  color: white;
+  text-align;center;
 }
 
 img { max-width: 400px;}
