@@ -1,12 +1,12 @@
-from flask import Flask, Blueprint
+from flask import Flask, Blueprint, render_template
 import os
 
 app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    #return "hello World:" + str(os.environ.get('app_config_1'))
-    return app.send_static_file('index.html')
+    db_server = str( os.environ.get('db_server', default='no_value' ) )
+    return render_template('index.html', db_server=db_server)
 
 @app.route('/topic')
 def get_topic():
