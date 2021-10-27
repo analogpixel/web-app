@@ -9,7 +9,7 @@ COPY "entrypoint.sh" "/entrypoint.sh"
 RUN chmod 755 /entrypoint.sh
 COPY "envconsul" "/bin/envconsul"
 
-RUN pip install -r /app/requirements.tx
+RUN pip install -r /app/requirements.txt
 #ENTRYPOINT ["/entrypoint.sh"]
 #CMD ["/bin/envconsul", "-consul-addr","consul-ui.default.svc.cluster.local","--prefix=sample-app","/start.sh"]
 #CMD ["/start.sh"]
