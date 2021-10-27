@@ -1,3 +1,3 @@
 v1.1
 
-some updates
+cluster server: postgres.default.svc.cluster.local
