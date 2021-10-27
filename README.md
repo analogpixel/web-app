@@ -1,3 +1,4 @@
 v1.1
 
-cluster server: postgres.default.svc.cluster.local
+myapp/db_server: postgres.default.svc.cluster.local
+myapp/sql_query: select * from data;
