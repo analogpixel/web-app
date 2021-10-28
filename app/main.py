@@ -6,6 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
+    return "Hello World v1!"
     db_server = str( os.environ.get('db_server', default='no_value' ) )
     sql_query = str( os.environ.get('sql_query', default='select * from data' ) )
 
